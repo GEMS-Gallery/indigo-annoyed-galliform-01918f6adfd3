@@ -1,0 +1,9 @@
+type Result = 
+ variant {
+   err: text;
+   ok;
+ };
+service : {
+  addItem: (text) -> (Result);
+  getItems: () -> (opt vec text) query;
+}
